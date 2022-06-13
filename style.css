@@ -31,8 +31,9 @@ header{
     height: 100%;
     overflow: hidden;
     object-fit: cover;
-    /* animation: zoom 5s backwards;   */
+    animation: zoom 5s backwards;
 }
+    
 /* Animação da Imagem */
 @keyframes zoom {
     0%{
