@@ -171,3 +171,11 @@ header{
 .icon>i{
     font-size: 7rem;
 }
+/* ==== Projetos ==== */
+.projetos{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 3rem;
+}
