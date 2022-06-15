@@ -208,12 +208,7 @@ header {
 }
 
 /* ==== Projetos ==== */
-#sessao-projetos .sessao-header {
-  text-align: center;
-  font-size: 2rem;
-  margin: 2rem 0;
-}
-#sessao-projetos .projetos {
+.projetos {
   display: flex;
   justify-content: space-between;
   text-align: center;
