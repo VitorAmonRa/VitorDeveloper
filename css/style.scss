@@ -170,10 +170,17 @@ header{
         }
 }
 /* ==== Projetos ==== */
-.projetos{
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    align-items: center;
-    padding: 3rem;
+#sessao-projetos{
+    .sessao-header{
+        text-align: center;
+        font-size: 2rem;
+        margin: 2rem 0;
+    }
+    .projetos{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        padding: 3rem;
+    }
 }
