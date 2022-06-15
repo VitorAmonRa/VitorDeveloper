@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Spline+Sans+Mono:wght@300;500&display=swap');
-
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css);
+@import 'variables';
 
 *{
     padding: 0px;
@@ -10,8 +10,8 @@
     text-decoration: none;
 }
 body{
-    font-family: 'Spline Sans Mono', monospace;
-    color: white;
+    font-family: $font;
+    color: $primary-color;
     background-image: linear-gradient(to right, #020200,#020200,  #1A1210, #16110e);
 }
 header{
@@ -25,15 +25,14 @@ header{
     width: 100%;
     height: 100%;
     overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            object-fit: cover;
+            animation: zoom 5s backwards; 
+        }
 }
-.image img{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    object-fit: cover;
-    animation: zoom 5s backwards;
-}
-    
 /* Animação da Imagem */
 @keyframes zoom {
     0%{
@@ -43,7 +42,6 @@ header{
         transform: scale(1);
     }
 }
-
 /* ==== Cabeçalho ==== */
 .banner {
     position: absolute;
@@ -53,25 +51,25 @@ header{
     font-size: 20px;
     top: 10%;
     left: 10%;
-}
-.banner h1{
-    color: rgb(255, 255, 255);
-    font: 1rem;
-    font-weight: 400;
-    text-align: start;
-    text-shadow: .3rem .3rem 2px rgba(0, 0, 0, .4);
-    white-space: nowrap;
-    overflow: hidden;
-    animation: blinkCursor 500ms infinite normal, typing  4s 5s both;
-}
-.banner p{
-    color: #fff;
-    font-weight: 200;
-    text-align: start;
-    text-shadow: .3rem .3rem 2px rgba(0, 0, 0, .4);
-    white-space: nowrap;
-    overflow: hidden;
-    animation: blinkCursor 500ms infinite normal, typing  4s 5s both;
+        h1{
+            color: $primary-color;
+            font: 1rem;
+            font-weight: 400;
+            text-align: start;
+            text-shadow: .3rem .3rem 2px rgba(0, 0, 0, .4);
+            white-space: nowrap;
+            overflow: hidden;
+            animation: blinkCursor 500ms infinite normal, typing  4s 5s both;
+        }
+        p{
+            color: $primary-color;
+            font-weight: 200;
+            text-align: start;
+            text-shadow: .3rem .3rem 2px rgba(0, 0, 0, .4);
+            white-space: nowrap;
+            overflow: hidden;
+            animation: blinkCursor 500ms infinite normal, typing  4s 5s both;
+        }
 }
 /* ==== Animação do Banner ==== */
 @keyframes typing {
@@ -102,12 +100,12 @@ header{
     flex-direction: column;
     justify-content: space-evenly;
     cursor: pointer;
-}
-.line{
-    width: 100%;
-    height: .1rem;
-    box-shadow: .1rem .1rem 2px black;
-    background-color: white;
+        .line{
+            width: 100%;
+            height: .1rem;
+            box-shadow: .1rem .1rem 2px black;
+            background-color: $primary-color;
+        }
 }
 .sidebar{
     width: 20rem;
@@ -115,7 +113,7 @@ header{
     position: fixed;
     top: 0;
     right: -20rem;
-    color: white;
+    color: $primary-color;
     background-color: rgba(17, 17, 17, 0.801);
     transition: all 1s;
 }
@@ -131,12 +129,12 @@ header{
     font-size: 20px;
     top: 100px;
     height: 40vh;
-}
-.menu-link{
-    color:#FFE5D6 ;
-}
-.menu-link:hover{
-    color: #743F17;
+        .menu-link{
+            color: $second-color ;
+        }
+        .menu-link:hover{
+            color: $third-color;
+        }
 }
 .social-media{
     position: relative;
@@ -145,31 +143,31 @@ header{
     width: 100%;
     margin: 7rem 0;
     font-size: 30px;
-}
-.social-media > a{
-    color: #FFE5D6;
-}
-.social-media > a:hover{
-    color: #743F17;
+        a{
+        color: $second-color;
+        }
+        a:hover{
+            color: $third-color;
+        }
 }
 /* ==== CONHECIMENTOS ==== */
 #sessao-conhecimentos{
-    color: white;
-}
-.sessao-header{
-    font-size: 2rem;
-    text-align: center;
-    margin: 2rem 0;
-}
-.conhecimentos{
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    margin-top: 1rem;
-    padding: 3rem;
-}
-.icon>i{
-    font-size: 7rem;
+    color: $primary-color;
+        .sessao-header{
+            font-size: 2rem;
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .conhecimentos{
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            margin-top: 1rem;
+            padding: 3rem;
+        }
+        .icon>i{
+            font-size: 7rem;
+        }
 }
 /* ==== Projetos ==== */
 .projetos{
