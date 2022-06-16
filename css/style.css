@@ -222,7 +222,7 @@ header {
 }
 
 /* ==== MEDIA QUERY ==== */
-@media (min-width: 150px) and (max-width: 589px) {
+@media (min-width: 480px) and (max-width: 589px) {
   body {
     background-image: linear-gradient(to right, #020200, #020200, #020200, #1A1210, #16110e);
   }
