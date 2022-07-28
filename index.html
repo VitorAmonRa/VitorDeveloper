@@ -30,7 +30,7 @@
             <ul class="menu">
                 <li class="menu-item-home"><a href="#" class="menu-link">Home</a></li>
                 <li class="menu-item-conhecimento"><a href="#sessao-conhecimentos" class="menu-link" >Conhecimentos</a></li>
-                <li class="menu-item-projetos"><a href="#" class="menu-link">Projetos</a></li>
+                <li class="menu-item-projetos"><a href="#sessao-projetos" class="menu-link">Projetos</a></li>
             </ul>
         </nav>
         <div class="social-media">
@@ -39,6 +39,9 @@
             <a href="#"><i class="fa-brands fa-instagram"></i></a>
         </div>
     </aside>
+       
+    <!-- CONHECIMENTOS -->
+    <div class="scroll-animation" data-anime>
         <section id="sessao-conhecimentos">
             <div class="sessao-header">
                 <h3>Conhecimentos</h3>
@@ -64,27 +67,71 @@
                 </div>
             </div>
         </section>
-      <!--  <section id="sessao-projetos">
+    
+    <!-- PROJETOS -->
+        <section id="sessao-projetos">
             <div class="sessao-header">
                 <h3>Projetos</h3>
             </div>
-            <div class="projetos">
-                <div class="projetos">
-                    <div class="projeto-um"><p>Projeto 1</p></div>
-                    <div class="imagem-um"></div>
-                </div>
-                <div class="projetos">
-                    <div class="projeto-dois">
-                        <p>Projeto 2</p>
-                </div>
-                </div>
-                <div class="projetos">
-                    <div class="projeto-tres">
-                        <p>Projeto 3</p>
+            <div class="slider">
+                <div class="slides">
+                    <!-- Radio Buttons -->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+
+                    <!-- Slides images -->
+                    <div class="slide first">
+                        <div class="link">
+                            <a href="https://github.com/VitorAmonRa?tab=repositories">Simple Forms</a>
+                            <p>Um formulario simples utilizando apenas HTML/CSS</p>
+                        </div>
+                        <img src="images/Template-Formulario.PNG" alt="Imagem 1">
+                    </div>
+                    <div class="slide">
+                        <div class="link">
+                            <a href="https://github.com/VitorAmonRa?tab=repositories">Relogio Digital</a>
+                            <p>Um relogio digital utilizando JS puro com SASS</p>
+                        </div>
+                        <img src="images/Template-relogio.PNG" alt="Imagem 2">
+                    </div>
+                    <div class="slide">
+                        <div class="link">
+                            <a href="https://github.com/VitorAmonRa?tab=repositories">Controle de IMC</a>
+                            <p>Projeto que faz o calculo do IMC utilizando ReactJS e SASS</p>
+                        </div>
+                        <img src="images/Template-IMC 1.PNG" alt="Imagem 3">
+                    </div>
+                    <div class="slide">
+                        <div class="link">
+                            <a href="https://github.com/VitorAmonRa?tab=repositories">Controle Fincanceiro</a>
+                            <p>Projeto em que voce pode adicionar valor e deletar usando o Local Storage do Browser,projeto feito utilizando ReactJS e SASS</p>
+                        </div>
+                        <img src="images/Template-Inical.PNG" alt="Imagem 4">
+                    </div>
+                    
+                    <!-- Navigation -->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
                     </div>
                 </div>
-            </div> 
-        </section> -->
+
+                <div class="manual-navigation">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+            </div>
+        </section> 
+    </div>
+        <footer>
+            ==================================================================================
+        </footer>
 </body>
     <script src="script.js"></script>
 </html>

@@ -152,6 +152,7 @@ header{
 }
 /* ==== CONHECIMENTOS ==== */
 #sessao-conhecimentos{
+    margin-top: 200px;
     color: $primary-color;
         .sessao-header{
             font-size: 2rem;
@@ -171,19 +172,132 @@ header{
 }
 /* ==== Projetos ==== */
 #sessao-projetos{
+    margin-top: 200px;
     .sessao-header{
         text-align: center;
         font-size: 2rem;
         margin: 2rem 0;
     }
-    .projetos{
-        display: flex;
-        justify-content: space-between;
-        text-align: center;
-        align-items: center;
-        padding: 3rem;
+    .slider{
+        margin: 0 auto;
+        width: 1000px;
+        height: 500px;
+        overflow: hidden;
+        border: 5px solid #fff ;
+        .slides{
+            width: 500%;
+            height: 500px;
+            display: flex;
+            input{
+                display: none;
+            }
+            #radio1:checked ~ .first{
+                margin-left: 0;
+            }
+            #radio1:checked ~ .navigation-auto .auto-btn1{
+                background-color: #fff;
+            }
+            #radio2:checked ~ .first {
+                margin-left: -25%;
+            }
+            #radio2:checked ~ .navigation-auto .auto-btn2{
+                background-color: #fff;
+            }
+            #radio3:checked ~ .first {
+                margin-left: -50%;
+            }
+            #radio3:checked ~ .navigation-auto .auto-btn3{
+                background-color: #fff;
+            }
+            #radio4:checked ~ .first {
+                margin-left: -75%;
+            }
+            #radio4:checked ~ .navigation-auto .auto-btn4{
+                background-color: #fff;
+            }
+            #radio5:checked ~ .first {
+                margin-left: -100%;
+            }
+            #radio5:checked ~ .navigation-auto .auto-btn5{
+                background-color: #fff;
+            }
+            .slide{
+                width: 25%;
+                position: relative;
+                transition: 2s; 
+                background-color: black;
+                img{
+                    object-fit: cover;
+                    width:1000px;
+                }
+                .link{
+                    position: absolute;
+                    width: 1000px;
+                    margin-top: 380px;
+                    background-color: rgba(0,0,0,0.5);
+                    padding: 60px 0 ;
+                    a{
+                        display: flex;
+                        margin-top: -50px;
+                        color: white;
+                        text-decoration: none;
+                        font-size: 25px;
+                        padding: 0 1rem;
+                    }
+                    p{
+                        transition: none;
+                        text-decoration: none;
+                        padding: 0 1rem;
+                    }
+                }
+            }
+        }
+        .manual-navigation{
+            position: absolute;
+            width: 1000px;
+            margin-top: -40px;
+            display: flex;
+            justify-content: center;
+            .manual-btn{
+                border: 2px solid #fff;
+                padding: 5px;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+            .manual-btn:not(:last-child){
+                margin-right: 25px;
+            }
+            .manual-btn:hover{
+                background-color: white;
+            }
+        }
+        .navigation-auto div{
+            border: 2px solid blue;
+            padding: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .navigation-auto div:not(:last-child){
+            margin-right: 25px;
+        }
+        .navigation-auto{
+            position: absolute;
+            width: 1000px;
+            margin-top: 460px;
+            display: flex;
+            justify-content: center;
+        }
     }
 }
+[data-anime]{
+    opacity: 0;
+    transition: 0.3s;
+}
+[data-anime].animate{
+    opacity: 1;
+}
+
+  
 /* ==== MEDIA QUERY ==== */
 @media (min-width: 480px) and (max-width: 589px){
     body{

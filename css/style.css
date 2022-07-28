@@ -189,6 +189,7 @@ header {
 
 /* ==== CONHECIMENTOS ==== */
 #sessao-conhecimentos {
+  margin-top: 200px;
   color: white;
 }
 #sessao-conhecimentos .sessao-header {
@@ -208,17 +209,133 @@ header {
 }
 
 /* ==== Projetos ==== */
+#sessao-projetos {
+  margin-top: 200px;
+}
 #sessao-projetos .sessao-header {
   text-align: center;
   font-size: 2rem;
   margin: 2rem 0;
 }
-#sessao-projetos .projetos {
+#sessao-projetos .slider {
+  margin: 0 auto;
+  width: 1000px;
+  height: 500px;
+  overflow: hidden;
+  border: 5px solid #fff;
+}
+#sessao-projetos .slider .slides {
+  width: 500%;
+  height: 500px;
   display: flex;
-  justify-content: space-between;
-  text-align: center;
-  align-items: center;
-  padding: 3rem;
+}
+#sessao-projetos .slider .slides input {
+  display: none;
+}
+#sessao-projetos .slider .slides #radio1:checked ~ .first {
+  margin-left: 0;
+}
+#sessao-projetos .slider .slides #radio1:checked ~ .navigation-auto .auto-btn1 {
+  background-color: #fff;
+}
+#sessao-projetos .slider .slides #radio2:checked ~ .first {
+  margin-left: -25%;
+}
+#sessao-projetos .slider .slides #radio2:checked ~ .navigation-auto .auto-btn2 {
+  background-color: #fff;
+}
+#sessao-projetos .slider .slides #radio3:checked ~ .first {
+  margin-left: -50%;
+}
+#sessao-projetos .slider .slides #radio3:checked ~ .navigation-auto .auto-btn3 {
+  background-color: #fff;
+}
+#sessao-projetos .slider .slides #radio4:checked ~ .first {
+  margin-left: -75%;
+}
+#sessao-projetos .slider .slides #radio4:checked ~ .navigation-auto .auto-btn4 {
+  background-color: #fff;
+}
+#sessao-projetos .slider .slides #radio5:checked ~ .first {
+  margin-left: -100%;
+}
+#sessao-projetos .slider .slides #radio5:checked ~ .navigation-auto .auto-btn5 {
+  background-color: #fff;
+}
+#sessao-projetos .slider .slides .slide {
+  width: 25%;
+  position: relative;
+  transition: 2s;
+  background-color: black;
+}
+#sessao-projetos .slider .slides .slide img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 1000px;
+}
+#sessao-projetos .slider .slides .slide .link {
+  position: absolute;
+  width: 1000px;
+  margin-top: 380px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 60px 0;
+}
+#sessao-projetos .slider .slides .slide .link a {
+  display: flex;
+  margin-top: -50px;
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 0 1rem;
+}
+#sessao-projetos .slider .slides .slide .link p {
+  transition: none;
+  text-decoration: none;
+  padding: 0 1rem;
+}
+#sessao-projetos .slider .manual-navigation {
+  position: absolute;
+  width: 1000px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+#sessao-projetos .slider .manual-navigation .manual-btn {
+  border: 2px solid #fff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#sessao-projetos .slider .manual-navigation .manual-btn:not(:last-child) {
+  margin-right: 25px;
+}
+#sessao-projetos .slider .manual-navigation .manual-btn:hover {
+  background-color: white;
+}
+#sessao-projetos .slider .navigation-auto div {
+  border: 2px solid blue;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#sessao-projetos .slider .navigation-auto div:not(:last-child) {
+  margin-right: 25px;
+}
+#sessao-projetos .slider .navigation-auto {
+  position: absolute;
+  width: 1000px;
+  margin-top: 460px;
+  display: flex;
+  justify-content: center;
+}
+
+[data-anime] {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+[data-anime].animate {
+  opacity: 1;
 }
 
 /* ==== MEDIA QUERY ==== */
@@ -226,25 +343,21 @@ header {
   body {
     background-image: linear-gradient(to right, #020200, #020200, #020200, #1A1210, #16110e);
   }
-
   .image img {
     width: 100%;
     height: 70vh;
     -o-object-fit: cover;
        object-fit: cover;
   }
-
   .banner h1 {
     font-size: 1.5rem;
   }
   .banner p {
     font-size: 1rem;
   }
-
   .hamburguer {
     right: 3rem;
   }
-
   .sidebar {
     width: 16rem;
   }
@@ -254,7 +367,6 @@ header {
   .sidebar .social-media {
     right: 0.5rem;
   }
-
   #sessao-conhecimentos .conhecimentos {
     display: flex;
     flex-direction: column;
@@ -270,7 +382,6 @@ header {
     -o-object-fit: cover;
        object-fit: cover;
   }
-
   #sessao-conhecimentos .conhecimentos {
     display: grid;
     grid-template-columns: 0.5fr 0.5fr 0.5fr;
@@ -288,7 +399,6 @@ header {
     -o-object-fit: cover;
        object-fit: cover;
   }
-
   #sessao-conhecimentos .icon i {
     font-size: 4rem;
   }
