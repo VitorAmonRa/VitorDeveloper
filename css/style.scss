@@ -172,7 +172,8 @@ header{
 }
 /* ==== Projetos ==== */
 #sessao-projetos{
-    margin-top: 200px;
+    margin-bottom: 100px;
+    margin-top: 100px;
     .sessao-header{
         text-align: center;
         font-size: 2rem;
@@ -289,6 +290,20 @@ header{
         }
     }
 }
+
+footer{
+    margin:auto;
+    width: 1000px;
+    padding: 1rem 0;
+    border-top: 2px solid #fff;
+    p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.2rem;
+    }
+}
+
 [data-anime]{
     opacity: 0;
     transition: 0.3s;
@@ -296,6 +311,7 @@ header{
 [data-anime].animate{
     opacity: 1;
 }
+
 
   
 /* ==== MEDIA QUERY ==== */
