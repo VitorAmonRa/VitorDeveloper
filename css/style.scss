@@ -385,6 +385,7 @@ footer{
                 margin: 2rem 0 ;
                 img{
                     width: 100%;
+
                 }
             }
         }
@@ -409,17 +410,12 @@ footer{
             font-size: 1rem;
         }
     }
-    .hamburguer{
-        right: 3rem;
-    }
     .sidebar{
-        width: 16rem;
+        width: 12rem;
             .menu{
-                font-size: 1.2rem;
+                font-size: 15px;
             }
-            .social-media{
-                right: 0.5rem;
-            }
+
     }
     #sessao-conhecimentos{
         .conhecimentos{
@@ -460,16 +456,10 @@ footer{
         }
     }
     .sidebar{
-        width: 16rem;
+        width: 12rem;
             .menu{
                 font-size: 15px;
             }
-            .social-media{
-                right: 15px;
-            }
-    }
-    .sidebar.show-menu{
-        right: 10rem;
     }
     #sessao-conhecimentos{
         .conhecimentos{
