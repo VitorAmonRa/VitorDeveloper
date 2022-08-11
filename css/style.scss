@@ -184,7 +184,7 @@ header{
         width: 1000px;
         height: 500px;
         overflow: hidden;
-        border: 5px solid #fff ;
+        border: 5px solid rgb(255, 255, 255) ;
         .slides{
             width: 500%;
             height: 500px;
@@ -289,12 +289,33 @@ header{
             justify-content: center;
         }
     }
+    .images{
+        display: none;
+        overflow: hidden;
+        margin: 2rem ;
+        .slide-small{
+            text-align: center;
+            justify-content: center;
+                .text-content{
+                    text-align: start;
+                    padding: 0 10px;
+                    width: 100%;
+                    h3{
+                        padding: 5px 0;
+                    }
+                }
+            img{
+                border: 5px solid rgb(255, 255, 255);
+            }
+        }
+    }
 }
 
 footer{
     margin:auto;
-    width: 1000px;
+    width: 100%;
     padding: 1rem 0;
+
     border-top: 3px solid #fff;
     p{
         display: flex;
@@ -315,6 +336,60 @@ footer{
 
   
 /* ==== MEDIA QUERY ==== */
+@media  (max-width: 1230px){
+    .image{
+        img{
+            width: 100%;
+            height:100vh;
+            object-fit: cover;
+        }
+    }
+    #sessao-conhecimentos{
+        .icon{
+            i{
+                font-size: 4rem;
+            }
+        }
+    }
+}
+@media (min-width: 590px) and (max-width: 1060px){
+    .image{
+        img{
+            width: 100%;
+            height:100vh;
+            object-fit: cover;
+        }
+    }
+    #sessao-conhecimentos{
+        .conhecimentos{
+            display: grid;
+            grid-template-columns: 0.5fr 0.5fr 0.5fr;
+            justify-items: center;
+            align-items: center;
+        }
+        .icon{
+            i{
+                font-size: 5rem;
+            }
+        }
+    }
+    #sessao-projetos{
+        .slider{
+            overflow: hidden;
+            display: none;
+        }
+        .images{
+            display: block;
+            .slide-small{
+                width: 100%;
+                margin: 2rem 0 ;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
 @media (min-width: 480px) and (max-width: 589px){
     body{
         background-image: linear-gradient(to right, #020200, #020200,#020200, #1A1210, #16110e);
@@ -357,41 +432,69 @@ footer{
             }
         }
     }
-}
-@media (min-width: 590px) and (max-width: 1060px){
-    .image{
-        img{
-            width: 100%;
-            height:100vh;
-            object-fit: cover;
+    #sessao-projetos{
+        .slider{
+            overflow: hidden;
+            display: none;
         }
-    }
-    #sessao-conhecimentos{
-        .conhecimentos{
-            display: grid;
-            grid-template-columns: 0.5fr 0.5fr 0.5fr;
-            justify-items: center;
-            align-items: center;
-        }
-        .icon{
-            i{
-                font-size: 5rem;
+        .images{
+            display: block;
+            .slide-small{
+                width: 100%;
+                margin: 2rem 0 ;
+                img{
+                    width: 100%;
+                }
             }
         }
     }
 }
-@media  (max-width: 1230px){
-    .image{
-        img{
-            width: 100%;
-            height:100vh;
-            object-fit: cover;
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .banner{
+        h1{
+            font-size: 1.5rem;
+        }
+        p{
+            font-size: 1rem;
         }
     }
+    .sidebar{
+        width: 16rem;
+            .menu{
+                font-size: 15px;
+            }
+            .social-media{
+                right: 15px;
+            }
+    }
+    .sidebar.show-menu{
+        right: 10rem;
+    }
     #sessao-conhecimentos{
+        .conhecimentos{
+           display: flex;
+           flex-direction: column;
+        }
         .icon{
             i{
                 font-size: 4rem;
+            }
+        }
+    }
+    #sessao-projetos{
+        .slider{
+            overflow: hidden;
+            display: none;
+        }
+        .images{
+            display: block;
+            .slide-small{
+                width: 100%;
+                margin: 2rem 0 ;
+                img{
+                    width: 100%;
+                }
             }
         }
     }
