@@ -149,7 +149,6 @@ header {
   color: white;
   background-color: rgba(17, 17, 17, 0.801);
   transition: all 1s;
-  z-index: 99;
 }
 
 .sidebar.show-menu {
