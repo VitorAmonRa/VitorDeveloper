@@ -116,6 +116,7 @@ header{
     color: $primary-color;
     background-color: rgba(17, 17, 17, 0.801);
     transition: all 1s;
+    z-index: 1;
 }
 .sidebar.show-menu{
     right: 0;
