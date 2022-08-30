@@ -27,17 +27,17 @@ window.addEventListener('scroll', () =>{
 })
 
 /* Slides */
-let count = 1;
-document.getElementById("radio1").checked = true;
+/* let count = 1;
+document.getElementById("radio5").checked = true; */
 
-setInterval(() =>{
+/* setInterval(() =>{
     nextImage();
-}, 5000 ) 
+}, 5000 )  */
 
-function nextImage (){
+/* function nextImage (){
     count++;
-    if(count>4){
+    if(count > 5){
         count = 1;
     }
-    document.getElementById("radio" +count).checked = true;
-}
+    document.getElementById("radio" + count).checked = true;
+} */

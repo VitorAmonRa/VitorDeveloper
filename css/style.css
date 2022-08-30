@@ -271,8 +271,6 @@ header {
   background-color: black;
 }
 #sessao-projetos .slider .slides .slide img {
-  -o-object-fit: cover;
-     object-fit: cover;
   width: 1000px;
 }
 #sessao-projetos .slider .slides .slide .link {
