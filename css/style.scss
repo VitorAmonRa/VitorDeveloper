@@ -549,6 +549,19 @@ footer{
             }
         }
     }
+    #sessao-sobre-mim{
+        .sobre-mim{
+            overflow: hidden;
+            .texto-sobre-mim{
+                width: 90%;
+                font-size: 12px; 
+            }
+            .profile-foto{
+                display: none;
+                overflow: hidden;
+                }
+             }
+        }
     #sessao-projetos{
         .slider{
             overflow: hidden;
