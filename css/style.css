@@ -499,9 +499,6 @@ footer p {
   #sessao-conhecimentos .icon i {
     font-size: 4rem;
   }
-  #sessao-sobre-mim .sobre-mim {
-    overflow: hidden;
-  }
   #sessao-sobre-mim .sobre-mim .texto-sobre-mim {
     width: 90%;
     font-size: 16px;
@@ -538,23 +535,20 @@ footer p {
   .sidebar .menu {
     font-size: 15px;
   }
+  #sessao-sobre-mim .sobre-mim .texto-sobre-mim {
+    width: 90%;
+    font-size: 13px;
+  }
+  #sessao-sobre-mim .sobre-mim .profile-foto {
+    display: none;
+    overflow: hidden;
+  }
   #sessao-conhecimentos .conhecimentos {
     display: flex;
     flex-direction: column;
   }
   #sessao-conhecimentos .icon i {
     font-size: 4rem;
-  }
-  #sessao-sobre-mim .sobre-mim {
-    overflow: hidden;
-  }
-  #sessao-sobre-mim .sobre-mim .texto-sobre-mim {
-    width: 90%;
-    font-size: 12px;
-  }
-  #sessao-sobre-mim .sobre-mim .profile-foto {
-    display: none;
-    overflow: hidden;
   }
   #sessao-projetos .slider {
     overflow: hidden;
