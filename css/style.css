@@ -284,7 +284,7 @@ header {
   background-color: #fff;
 }
 #sessao-projetos .slider .slides #radio2:checked ~ .first {
-  margin-left: -25%;
+  margin-left: -20.5%;
 }
 #sessao-projetos .slider .slides #radio2:checked ~ .navigation-auto .auto-btn2 {
   background-color: #fff;
@@ -305,6 +305,12 @@ header {
   margin-left: -100%;
 }
 #sessao-projetos .slider .slides #radio5:checked ~ .navigation-auto .auto-btn5 {
+  background-color: #fff;
+}
+#sessao-projetos .slider .slides #radio6:checked ~ .first {
+  margin-left: -125%;
+}
+#sessao-projetos .slider .slides #radio6:checked ~ .navigation-auto .auto-btn6 {
   background-color: #fff;
 }
 #sessao-projetos .slider .slides .slide {

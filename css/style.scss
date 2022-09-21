@@ -244,7 +244,7 @@ header{
                 background-color: #fff;
             }
             #radio2:checked ~ .first {
-                margin-left: -25%;
+                margin-left: -20.5%;
             }
             #radio2:checked ~ .navigation-auto .auto-btn2{
                 background-color: #fff;
@@ -265,6 +265,12 @@ header{
                 margin-left: -100%;
             }
             #radio5:checked ~ .navigation-auto .auto-btn5{
+                background-color: #fff;
+            }
+            #radio6:checked ~ .first {
+                margin-left: -125%;
+            }
+            #radio6:checked ~ .navigation-auto .auto-btn6{
                 background-color: #fff;
             }
             .slide{
