@@ -36,7 +36,7 @@ setInterval(() =>{
 
 function nextImage (){
     count++;
-    if(count > 5){
+    if(count > 6){
         count = 1;
     }
     document.getElementById("radio" + count).checked = true;
